@@ -63,7 +63,8 @@ jobs:
           channel: "stable"
           flutter-version-file: pubspec.yaml
           architecture: x64
-      - run: sudo xcode-select --switch /Applications/Xcode_16.0.app
+      - run: sudo xcode-select --switch /Applications/Xcode_16.app/Contents/Developer
+      - run: xcodebuild -downloadPlatform iOS
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign
       - run: |
