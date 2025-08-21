@@ -219,22 +219,31 @@ class _ReaderGestureDetectorState extends AutomaticGlobalState<_ReaderGestureDet
         switch (context.reader.mode) {
           case ReaderMode.galleryLeftToRight:
           case ReaderMode.continuousLeftToRight:
-            if (isLeft) {
-              prev();
-            } else if (isRight) {
-              next();
-            } else {
-              isCenter = true;
-            }
           case ReaderMode.galleryRightToLeft:
           case ReaderMode.continuousRightToLeft:
-            if (isLeft) {
+            if (!isBottom && (isLeft || isRight)) {
               next();
-            } else if (isRight) {
+            } else if (isBottom) {
               prev();
             } else {
               isCenter = true;
             }
+            // if (isLeft) {
+            //   prev();
+            // } else if (isRight) {
+            //   next();
+            // } else {
+            //   isCenter = true;
+            // }
+          // case ReaderMode.galleryRightToLeft:
+          // case ReaderMode.continuousRightToLeft:
+            // if (isLeft) {
+            //   next();
+            // } else if (isRight) {
+            //   prev();
+            // } else {
+            //   isCenter = true;
+            // }
           case ReaderMode.galleryTopToBottom:
           case ReaderMode.continuousTopToBottom:
             if (isTop) {
