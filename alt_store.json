@@ -13,15 +13,15 @@
       "bundleIdentifier": "com.github.wgh136.venera",
       "developerName": "wgh136",
       "subtitle": "A comic reader that supports reading local and network comics",
-      "version": "1.4.5",
-      "versionDate": "2025-06-18",
-      "versionDescription": "1. Fixed an abnormal single image height issue when \"imagesPerPage > 1\". 379  \r\n2. Fixed an invalid page calculation issue when \"showSingleImageOnFirstPage\" is enabled.  \r\n3. Fixed an issue with incorrect reading history when displaying a single image on the first page.  \r\n4. Fixed abnormal history recording when pages are not flipped. 392  \r\n5. Fixed an issue where the download task would stop after exiting the reader. 387  \r\n6. Fixed a \"RangeError\" when translating tags. 356  \r\n7. Reset the current folder to null on the favorites page if the folder is invalid. 389  \r\n8. Fixed various issues when using a custom download path on Android. 400  \r\n9. Set the initial chapter to the first downloaded chapter if no history exists when starting to read a local comic. 405  \r\n10. Removed the config file repository URL from the app.",
-      "downloadURL": "https://github.com/venera-app/venera/releases/download/v1.4.5/venera-ios-1.4.5%2B145.ipa",
+      "version": "1.5.0",
+      "versionDate": "2025-09-03",
+      "versionDescription": "1. Upgrade Flutter to 3.35.2\r\n2. Fix incorrect mouse scroll speed (462)\r\n3. Temporary workaround for Hyper OS multi-window display issue (467)\r\n4. Add support for per-comic custom reader settings (459)\r\n5. Add option to ignore certificate errors (485)\r\n6. Add configurable mouse scroll speed setting (471)\r\n7. [JS Engine] Fix \"onResponse\" API\r\n8. [JS Engine] Fix invalid stack trace\r\n9. [JS Engine] Add \"compute\" API\r\n10. Refactor category options\r\n11. Add headless mode. 476",
+      "downloadURL": "https://github.com/venera-app/venera/releases/download/v1.5.0/venera-ios-1.5.0%2B150.ipa",
       "localizedDescription": "A comic reader that supports reading local and network comics",
       "iconURL": "https://raw.githubusercontent.com/venera-app/venera/master/assets/app_icon.png",
       "tintColor": "#0784FC",
       "category": "utilities",
-      "size": 14960268,
+      "size": 15046636,
       "appPermissions": {
         "entitlements": [
           "application-identifier",
@@ -39,6 +39,13 @@
         }
       },
       "versions": [
+        {
+          "version": "1.5.0",
+          "date": "2025-09-03",
+          "localizedDescription": "1. Upgrade Flutter to 3.35.2\r\n2. Fix incorrect mouse scroll speed (462)\r\n3. Temporary workaround for Hyper OS multi-window display issue (467)\r\n4. Add support for per-comic custom reader settings (459)\r\n5. Add option to ignore certificate errors (485)\r\n6. Add configurable mouse scroll speed setting (471)\r\n7. [JS Engine] Fix \"onResponse\" API\r\n8. [JS Engine] Fix invalid stack trace\r\n9. [JS Engine] Add \"compute\" API\r\n10. Refactor category options\r\n11. Add headless mode. 476",
+          "downloadURL": "https://github.com/venera-app/venera/releases/download/v1.5.0/venera-ios-1.5.0%2B150.ipa",
+          "size": 15046636
+        },
         {
           "version": "1.4.5",
           "date": "2025-06-18",
@@ -59,6 +66,16 @@
       "tintColor": "#0784FC",
       "title": "v1.4.5 - Venera  18/06/25",
       "url": "https://github.com/venera-app/venera/releases/tag/v1.4.5"
+    },
+    {
+      "appID": "com.github.wgh136.venera",
+      "caption": "Update of Venera just got released!",
+      "date": "2025-09-03T16:31:34Z",
+      "identifier": "release-v1.5.0",
+      "notify": true,
+      "tintColor": "#0784FC",
+      "title": "v1.5.0 - Venera  03/09/25",
+      "url": "https://github.com/venera-app/venera/releases/tag/v1.5.0"
     }
   ]
 }
